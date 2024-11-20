@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author miloxleila
+ * @author miloxantoine
  */
 public class TP1_manipNombresInt_MILOX {
 
@@ -20,17 +20,17 @@ public class TP1_manipNombresInt_MILOX {
         
         Scanner sc = new Scanner(System.in);
 
-        // Demande à l'utilisateur de saisir deux entiers
+        //Demande à l'utilisateur les deux nb
         System.out.println("Entrez le premier entier : ");
         int nb1 = sc.nextInt();
 
         System.out.println("Entrez le deuxième entier : ");
         int nb2 = sc.nextInt();
 
-        // Affiche les deux entiers saisis
+        
         System.out.println("Vous avez saisi les nombres : " + nb1 + " et " + nb2);
 
-        // Calcul et affichage de la somme, différence et produit
+        //Calcul somme,différence et produit
         int somme = nb1 + nb2;
         int difference = nb1 - nb2;
         int produit = nb1 * nb2;
@@ -39,7 +39,7 @@ public class TP1_manipNombresInt_MILOX {
         System.out.println("La différence des deux nombres est : " + difference);
         System.out.println("Le produit des deux nombres est : " + produit);
 
-        // Calcul et affichage du quotient entier et du reste de la division euclidienne
+        //Calcul et affichage du quotient et du reste
         int quotient = nb1 / nb2;
         int reste = nb1 % nb2;
 
