@@ -21,20 +21,20 @@ public class TP1_stats_MILOX {
         Scanner sc = new Scanner(System.in);
         Random generateurAleat = new Random();
         
-        int[] Tableau = new int[6];
+        int[] Tableau = new int[6]; // Nouveau tableau avec 6 entiers, initialisés à 0
         for (int i=0; i < Tableau.length; i++) {
             Tableau[i] = 0;
         
         }
         
         System.out.println("Saisissez un nombre entier m");
-        int m = sc.nextInt();
+        int m = sc.nextInt(); // m correspond au nombre d'occurences 
         for (int i = 0; i< m; i++){
             int res = generateurAleat.nextInt(6);
             Tableau[res]++;
          
-        }
-        System.out.println("\nRésultats pour vérifier la répoartition de la génération aléatoire");
+        } 
+        System.out.println("\nRésultats pour vérifier la répoartition de la génération aléatoire"); // Affichage des résultats
         for (int i = 0; i< Tableau.length; i++){
             System.out.println("Nombre" +(i+1) + " : " + Tableau[i] + "occurence");
             
@@ -42,7 +42,7 @@ public class TP1_stats_MILOX {
         }
         System.out.println("\nRésultats pour vérifier la répoartition de la génération aléatoire en pourcentage");
         for (int i = 0; i< Tableau.length; i++){
-            double pourcentage = ((double) Tableau[i]/m) * 100;
+            double pourcentage = ((double) Tableau[i]/m) * 100; // Calcul du pourcentage
             System.out.println("Nombre" +(i+1) + " : " + String.format("%.2f",pourcentage) + "%");
             
         }
