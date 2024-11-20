@@ -10,13 +10,11 @@ package tp3_heroic_fantasy_milox;
  */
 public abstract class Epee extends Arme {
     private double finesse;
-    
-    public Epee(String nom, double niveauAttaque, double finesse){
-        this.nom = nom;
-        if (NiveauAttaque <= 100 && NiveauAttaque >= 0) {
-            this.NiveauAttaque = NiveauAttaque;
-        } else {
-            System.out.println("Niveau d'attaque Compris entre 0 et 100");
-        }
+
+    public Epee(double finesse, String nom, double NiveauAttaque) {
+        super(nom, NiveauAttaque);
+        this.finesse = finesse;
     }
-}
+    
+    }
+
