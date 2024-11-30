@@ -41,15 +41,15 @@ public class TP2_Bieres_MILOX {
     
     BiereCinq.lireEtiquette();
     
-    BiereCinq.Decapsuler();
-    BiereCinq.Decapsuler();
+    BiereCinq.Decapsuler(); // Decapsule
+    BiereCinq.Decapsuler(); // Verifie que la bouteille est deja ouverte
     
     
     autreBiere.Decapsuler();
     
     
     
-    System.out.println(uneBiere) ;
+    System.out.println(uneBiere) ; // Affichage des informations
     System.out.println(autreBiere) ;
     System.out.println(BiereCinq) ;
     System.out.println(BiereQuatre) ;
